@@ -1,0 +1,64 @@
+.statistics {
+    max-width: 400px;
+    height: 160px;
+    margin: 40px auto;
+    background-color: #fff;
+    border: 1px solid rgb(225, 223, 223);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.statList {
+    display: flex;
+    height: 80px;
+    padding-left: 0;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-basis: calc(100% / 5);
+    border-top: 1px solid rgb(225, 223, 223);
+}
+
+.item:not(:last-child) {
+    border-right: 1px solid rgb(225, 223, 223);
+}
+
+.label {
+    color: rgb(225, 223, 223);
+    font-weight: 700;
+}
+
+.percentage {
+    color: rgb(225, 223, 223);
+    font-weight: 700;
+    font-size: 25px;
+}
+
+
+
+/* <section className={css.statistics}>
+    {title && <h2 className={css.title}>{title}</h2>}
+  
+    <ul className={css.statList}>
+      {stats.map(stat => {
+        return <li key={stat.id} className={css.item}>
+        <span className={css.label}>{stat.label}</span>
+        <span className={css.percentage}>{stat.percentage}</span>
+      </li>
+      })}
+    </ul>
+  </section> */
